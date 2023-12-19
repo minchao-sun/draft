@@ -76,7 +76,7 @@ def step_optimizer(model, use_distributed: bool, seed: int = None):
         Adam(model.parameters()),
         clip_grad=1,
         log_num_zeros_in_grad=False,
-        check_fro_nan_in_grad=False,
+        check_for_nan_in_grad=False,
         params_have_main_grad=True,
         fp16=args.fp16,
         bf16=False,
@@ -89,7 +89,7 @@ def step_optimizer(model, use_distributed: bool, seed: int = None):
         # Force optimizer state initialization
         for p in model.parameters():
             p.grad = torch.randn_like(p.data, dtype=p.data.dtype)
-            # Update params
+        # Update params
         optim.step(args, Timers())
 
     return copy.deepcopy(list(model.parameters()))
