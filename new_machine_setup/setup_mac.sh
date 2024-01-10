@@ -13,3 +13,4 @@ fi
 # git
 git config --global user.name "Minchao Sun"
 git config --global user.email minchao.sun@outlook.com
+git config --global core.autocrlf input
