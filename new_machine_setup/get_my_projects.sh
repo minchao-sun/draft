@@ -14,10 +14,10 @@ if [ ! -d $WORKSPACE/DeepSpeed ]; then
     git remote add upstream https://github.com/microsoft/DeepSpeed.git
     cd $WORKSPACE
 fi
-if [ ! -d $WORKSPACE/AscendSpeed2 ]; then
-    git clone https://gitee.com/minchao-sun/AscendSpeed2.git
-    cd AscendSpeed2
-    git remote add upstream https://gitee.com/ascend/AscendSpeed2.git
+if [ ! -d $WORKSPACE/AscendSpeed ]; then
+    git clone https://gitee.com/minchao-sun/AscendSpeed.git
+    cd AscendSpeed
+    git remote add upstream https://gitee.com/ascend/AscendSpeed.git
     cd $WORKSPACE
 fi
 if [ ! -d $WORKSPACE/HE2RNA_code ]; then
