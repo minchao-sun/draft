@@ -20,9 +20,6 @@ if [ ! -d $WORKSPACE/AscendSpeed ]; then
     git remote add upstream https://gitee.com/ascend/AscendSpeed.git
     cd $WORKSPACE
 fi
-if [ ! -d $WORKSPACE/HE2RNA_code ]; then
-    git clone https://github.com/owkin/HE2RNA_code.git
-fi
 if [ ! -d $WORKSPACE/Megatron-LM ]; then
     git clone https://github.com/NVIDIA/Megatron-LM.git
 fi
