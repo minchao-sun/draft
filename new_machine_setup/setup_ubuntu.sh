@@ -16,7 +16,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # git
-git config --global user.name "Minchao Sun"
+git config --global user.name "minchao-sun"
 git config --global user.email minchao.sun@outlook.com
 git config --global core.autocrlf input
 git lfs install
